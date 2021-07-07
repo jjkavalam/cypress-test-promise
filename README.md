@@ -2,14 +2,14 @@
 
 This repo describes an apparent issue in Cypress's handling of custom commands that return a promise.
 
-When a custom command that returns a promise is timed out, commands in the `afterEach` hook fails unexpectedly.
+When a custom command that returns a promise is timed out, commands in the `afterEach` hook fails unexpectedly
 
-In addition, when such a test is run with `cypress open`, there error message shown is misleading as there is 
-no mention of the original timeout; instead it shows the error:
+In addition, when such a test is run with `cypress open`, the error message shown is misleading as there is 
+no mention of the original timeout error; instead it shows a different error message:
 
 > CypressError: Cypress detected that you returned a promise from a command while also invoking one or more cy commands in that promise.
 
-(However, when test is run with `cypress run`, the timeout is logged along with the error above)
+(However, when test is run with `cypress run`, the timeout error is logged along with the error above)
 
 # How to run ?
 
