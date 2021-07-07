@@ -23,8 +23,7 @@ module.exports = (on, config) => {
         myTask: function () {
             return new Promise((resolve, reject) => {
                 setTimeout(() => {
-                    // resolve("hello from task");
-                    reject();
+                    resolve("hello from task");
                 }, 1000)
             })
         }
